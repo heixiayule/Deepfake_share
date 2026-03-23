@@ -78,3 +78,18 @@ python run.py \
 
 Aditionally, you can use the augment.py code to perform data augmentation. When training the model, just add the `--augment 1` argument.
 
+### 数据流流程图
+
+想快速了解从数据准备到结果导出的完整流程？请查阅：
+
+👉 **[docs/flowchart.md](docs/flowchart.md)**
+
+该文档使用 **Mermaid** 绘制了训练/推理的端到端数据流，涵盖：
+- 数据准备与协议 CSV 读取
+- STFT/CQT 特征提取及 `__cache__/*.npz` 缓存机制
+- 可选增强数据集（`--augment 1`）的拼接方式
+- 模型构建（`lcnn` / `lcnn-lstm`）与训练回调
+- 评估推理、EER 计算及 `__log__/predictions-*.csv` 导出
+
+> **如何阅读：** 在 GitHub 上直接打开 [docs/flowchart.md](docs/flowchart.md)，Mermaid 流程图会自动渲染；也可在支持 Mermaid 的编辑器（如 VS Code + Mermaid 插件）中本地预览。
+
