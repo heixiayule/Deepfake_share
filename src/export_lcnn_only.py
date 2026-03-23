@@ -8,7 +8,7 @@ import onnx
 from model.lcnn import build_lcnn
 
 EXPORT_DIR = "../onnx"
-WIN_DIR = "/mnt/d/Documents/BaiduSyncdisk/WORKS/Deepfake2026/Deepfake/onnx"
+WIN_DIR = "/mnt/d/Documents/BaiduSyncdisk/WORKS/Deepfake2026/Deepfake/artifacts/onnx"
 
 BATCH = 1
 INPUT_SHAPE = (128, 128, 1)   # 如果你们确定了其他尺寸，可以在这里改
